@@ -1,0 +1,135 @@
+<div class="performer-workspace-overlay">
+    <div class="performer-workspace">
+        <div class="performer-workspace-head row">
+            <div id="performer___current_script_name">
+
+            </div>
+            <div id="performer___timer">
+
+            </div>
+
+            <div id="performer___close">
+                <a href="#" title="Закрыть прогон звонка"><span class="glyphicon glyphicon-remove"></span></a>
+            </div>
+            <div id="performer___functions">
+
+            </div>
+        </div>
+
+        <!--<div class="performer-workspace-hint row" id="performer___hint">-->
+
+        <!--</div>-->
+
+        <div class="performer-workspace-state performer-state-loading row" id="performer___message">
+            Загрузка данных...
+        </div>
+
+        <div class="performer-workspace-state performer-state-error row"></div>
+
+        <div class="performer-workspace-state performer-start-screen row">
+            <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+
+                <div class="alert alert-warning" id="performer-recorder-warning" style="display: none">
+                    Программа для записи разговора не подключена к серверу.
+                    <br/>
+                    Если у вас ее нет - <a href="/integration/recorder" target="_blank">тут можно ее скачать и прочитать инструкцию</a>.
+                    <br/>
+                    Если она установлена - запустите ее.
+                    <br/>
+                    <br/>
+                   Ваш ключ авторизации:
+                    <div id="performer-recorder-auth-key" ></div>
+                    <br/>
+
+                    <div id="performer-recorder-retry-ping" class="btn btn-default btn-xs">Проверить соединение</div>
+                </div>
+
+                <h4>Наберите номер, дождитесь ответа, затем нажмите кнопку "Сняли трубку" и приготовьтесь сказать:</h4>
+
+                <div id="performer___start_node_text">
+
+                </div>
+
+                <div class="text-center">
+                    <div id="performer___start_button" class="btn btn-primary btn-lg variant-button">Сняли трубку</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="performer-workspace-state performer-call-screen row">
+            <div class="performer-variants-left-right-and-node-content">
+                <div class="performer-variants-position performer-variants-left" id="performer___variants_left">
+
+                </div>
+                <div class="performer-node-content" id="performer___current_node_text">
+
+                </div>
+                <div class="performer-variants-position performer-variants-right" id="performer___variants_right">
+
+                </div>
+            </div>
+
+            <div class="performer-variants-position performer-variants-bottom" id="performer___variants_bottom">
+
+            </div>
+
+
+            <!--<div class="performer-variants">-->
+            <!--<div class="performer-node-variants" id="performer___current_node_variants">-->
+
+            <!--</div>-->
+
+            <!--<div class="performer-group-variants" id="performer___current_group_variants">-->
+
+            <!--</div>-->
+            <!--</div>-->
+        </div>
+
+        <div class="performer-workspace-state performer-end-screen row">
+
+            <h3 class="text-center"> Звонок завершен!</h3>
+
+            <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                <form action="#" id="performer___form">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <label class="control-label" for="performer___form__is_goal_reached">Цель достигнута</label>
+                                <select id="performer___form__is_goal_reached" class="form-control" name="is_goal_reached">
+                                    <option value=""></option>
+                                    <option value="1">Цель достигнута</option>
+                                    <option value="0">Цель не достигнута</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <label class="control-label" for="performer___form__normal_ending">Контроль качества</label>
+                                <select id="performer___form__normal_ending" class="form-control" name="normal_ending">
+                                    <option value=""></option>
+                                    <option value="1">Скрипт отработал</option>
+                                    <option value="0">Нештатное завершение</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+
+
+                            <div class="form-group">
+                                <label class="control-label" for="performer___form__comment">Комментарий</label>
+                                <textarea id="performer___form__comment" class="form-control" name="comment"></textarea>
+                            </div>
+
+                            <div id="performer___form__errors" class="text-danger"></div>
+
+                            <button type="submit" id="performer___form__save_button" class="btn btn-success btn-lg pull-right">Сохранить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
