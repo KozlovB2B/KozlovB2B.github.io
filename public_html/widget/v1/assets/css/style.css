@@ -1,0 +1,110 @@
+div#sswidget-panel-container.sswidget-panel-container {
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 430px;
+    height: 520px;
+    padding: 4px;
+
+    box-sizing: border-box;
+    z-index: 2147483647;
+
+    border-radius: 2px;
+    box-shadow: 0 0 10px #888888;
+    background-color: #eeeeee;
+    line-height: 1.3;
+}
+
+div#sswidget-panel-container.sswidget-panel-container * {
+    margin: 0;
+    padding: 0;
+}
+
+div#sswidget-panel-container.sswidget-panel-container.sswidget-panel-minimized {
+    /*width: 180px;*/
+    /*height: 32px;*/
+}
+
+div#sswidget-panel-container.sswidget-panel-container.sswidget-panel-minimized iframe {
+    display: none;
+}
+
+div#sswidget-panel-container.sswidget-panel-container.sswidget-panel-minimized #sswidget-panel-handler #sswidget-panel-functions-wrapper > ul > li.sswidget-panel-function#sswidget-panel-function-home {
+    display: none;
+}
+
+div#sswidget-panel-container.sswidget-panel-container.sswidget-panel-minimized #sswidget-panel-handler #sswidget-panel-functions-wrapper > ul > li.sswidget-panel-function#sswidget-panel-function-minimize {
+    display: none;
+}
+
+div#sswidget-panel-container.sswidget-panel-container #sswidget-panel-handler #sswidget-panel-functions-wrapper > ul > li.sswidget-panel-function#sswidget-panel-function-maximize {
+    display: none;
+}
+
+div#sswidget-panel-container.sswidget-panel-container.sswidget-panel-minimized #sswidget-panel-handler #sswidget-panel-functions-wrapper > ul > li.sswidget-panel-function#sswidget-panel-function-maximize {
+    display: inline-block;
+}
+
+div#sswidget-panel-container.sswidget-panel-container > iframe {
+    width: 100%;
+    height: 90%;
+}
+
+div#sswidget-panel-container #sswidget-panel-handler {
+    height: 26px;
+    cursor: move;
+    color: #000000;
+    padding-left: 32px;
+    padding-right: 4px;
+    padding-top: 4px;
+    margin-bottom: 2px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 6px 3px;
+    font-weight: bold;
+    font-size: 14px;
+    background-image: url("../img/icons/48.png");
+}
+
+div#sswidget-panel-container #sswidget-panel-handler #sswidget-panel-functions-wrapper > ul {
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+div#sswidget-panel-container #sswidget-panel-handler #sswidget-panel-functions-wrapper > ul > li.sswidget-panel-function {
+    display: inline-block;
+    list-style: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background: transparent url("../img/functions.png") no-repeat 0 0;
+    opacity: 0.8;
+}
+
+div#sswidget-panel-container #sswidget-panel-handler #sswidget-panel-functions-wrapper > ul > li.sswidget-panel-function:hover {
+    opacity: 1;
+}
+
+div#sswidget-panel-container #sswidget-panel-handler #sswidget-panel-functions-wrapper > ul > li.sswidget-panel-function#sswidget-panel-function-home {
+    background-position: 0 0;
+}
+
+div#sswidget-panel-container #sswidget-panel-handler #sswidget-panel-functions-wrapper > ul > li.sswidget-panel-function#sswidget-panel-function-minimize {
+    background-position: -64px 0;
+
+}
+
+div#sswidget-panel-container #sswidget-panel-handler #sswidget-panel-functions-wrapper > ul > li.sswidget-panel-function#sswidget-panel-function-maximize {
+    background-position: -32px 0;
+
+}
+
+div#sswidget-panel-container #sswidget-panel-handler #sswidget-panel-title {
+    float: left;
+}
+
+div#sswidget-panel-container #sswidget-panel-handler #sswidget-panel-functions-wrapper {
+    float: right;
+}
