@@ -1,0 +1,19 @@
+.integration___items {
+    text-align: center;
+}
+
+.integration___items .list-view > div {
+    width: 30%;
+    display: inline-block;
+    margin: 1%;
+    border: 1px dashed #CCCCCC;
+    padding: 0;
+}
+.integration___items img{
+    margin: auto;
+}
+
+.integration___item:hover {
+    text-decoration: none;
+    color: #337ab7;
+}

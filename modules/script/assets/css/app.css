@@ -1,0 +1,683 @@
+
+#script___script___common_cases_tabular td > div.wrapper{
+    min-width: 100px;
+    height: 20px;
+    cursor: pointer;
+}
+.script___script___common_cases_case_target .selectize-control{
+    height: 32px;
+}
+
+#script___node___update_form_modal .modal-dialog {
+    /*cursor: col-resize;*/
+}
+
+.wysihtml5-sandbox {
+    resize: both;
+}
+
+.tooltip-inner {
+    /*background: white;*/
+    text-align: left;
+    /*color: #000000;*/
+    /*box-shadow: 0 0 10px #000;*/
+
+}
+
+#editor___toolbar_functions .btn {
+    margin-bottom: 8px;
+}
+
+/*.tooltip-arrow{*/
+/*background: white;*/
+
+/*}*/
+#script___node___update_form_modal_previous_nodes_heading_wrapper {
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 20px;
+    font-weight: normal;
+}
+
+#script___node___update_form_modal_previous_nodes_heading_wrapper a.script___node___update_form_modal_heading_edit_node {
+    display: inline-block;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.jtk-node.editor___toolbar_tools_search_highlight_opened {
+    /*box-shadow: 0 0 50px #3E7E9C; /!* Параметры тени *!/*/
+    box-shadow: 0 0 50px #f76258; /* Параметры тени */
+
+}
+
+.jtk-node.editor___toolbar_tools_focus_node {
+    /*box-shadow: 0 0 50px #3E7E9C; /!* Параметры тени *!/*/
+    box-shadow: 0 0 50px #f76258; /* Параметры тени */
+
+}
+
+.selectize-control.plugin-clear_button .clearAll {
+    font-size: 24px;
+    position: absolute;
+    right: 34px;
+    z-index: 10;
+    top: -2px;
+    cursor: pointer;
+    opacity: .6;
+}
+
+.selectize-control.plugin-clear_button .clearAll:hover {
+    text-decoration: none;
+    opacity: .8;
+}
+
+.editor___toolbar_tools_search_input_suggestion.tt-suggestion {
+    font-size: 11px;
+    white-space: normal;
+}
+
+.tt-menu {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.editor___toolbar_container {
+}
+
+#script___script___update_form {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+#script___script___form_name {
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0 4px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 2px;
+    width: 400px;
+    height: 28px;
+}
+
+.editor___toolbar_tools_search_highlight .node-id-number {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 72px;
+    color: yellow;
+    line-height: 1;
+    text-shadow: 0 0 10px #fff;
+    background-color: #3E7E9C;
+    text-align: center;
+}
+.jp-table[data-isgoal='true'].editor___toolbar_tools_search_highlight .node-id-number {
+    background-color: #f76258;
+}
+
+.editor___toolbar_tools_search_highlight.editor___toolbar_tools_search_highlight_small .node-id-number {
+    font-size: 64px;
+}
+
+#script___script___form_name:hover {
+    border: 1px solid #ccc;
+}
+
+#script___script___form_name:focus {
+    border: 1px solid #ccc;
+}
+
+.editor___toolbar_logo {
+    float: left;
+    width: 80px;
+}
+
+.editor___toolbar_logo img {
+    margin: 6px;
+    height: 64px;
+}
+
+.editor___toolbar_user {
+    float: right;
+    padding: 20px;
+    width: 200px;
+}
+.input-sm .selectize-input { font-size: 12px; padding-top: 3px; padding-bottom: 3px; min-height: 30px; overflow: inherit; }
+.input-sm .selectize-input input { font-size: 12px; }
+.input-sm.selectize-control.plugin-clear_button .clearAll { font-size: 20px; }
+
+.editor___toolbar_user .navbar-nav > li > a {
+    color: #262626;
+}
+
+.editor___toolbar_tools_row {
+    background-color: #eee;
+}
+
+.editor___toolbar_tools_row .btn {
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.editor___toolbar_tools_row .btn:hover {
+    border: 1px solid #CCC;
+
+}
+
+.editor___toolbar_container i.fa {
+    margin: 0;
+}
+
+.editor___toolbar_functions i.fa-object-group {
+    margin-left: -3px;
+}
+
+.headport {
+    height: 40px;
+    background: white;
+}
+
+i.fa {
+    margin-right: 0;
+}
+
+.delete-relationship {
+    background: transparent;
+}
+
+.jp-table.jp-table-is-goal-true {
+    background-color: #f76258;
+}
+
+.jp-table[data-isgoal='true'] {
+    background-color: #f76258;
+}
+
+.node-call-stage {
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 8px;
+    color: #DDDDDD;
+}
+
+.script___edge__add_button_container {
+    text-align: center;
+    background-color: #CBE6DE;
+    font-size: 10px;
+    padding: 3px 0 2px 0;
+    cursor: pointer;
+    color: rgb(64, 115, 100);
+}
+
+.script___edge__add_button_container:hover {
+    opacity: 0.9;
+}
+
+.inline-middle-field {
+    width: 220px;
+    margin-right: 20px;
+}
+
+.btn.script___call__edge_button {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#script___call__first_node {
+    font-size: 16px;
+}
+
+#script___call__functions_buttons.btn {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#script___call__current_node {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+#script___call__history {
+    font-size: 11px;
+    height: 420px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+#script___node___update_form_edit_edges_button {
+    margin-top: 130px;
+}
+
+.script___node___update_form_edit_edge {
+    padding: 6px 15px;
+    cursor: pointer;
+}
+
+.script___node___update_form_edit_edge small {
+    color: #dddddd;
+}
+
+.script___node___update_form_delete_edge {
+    opacity: 0;
+}
+
+.script___node___update_form_edit_edge:hover .script___node___update_form_delete_edge {
+    opacity: .2;
+}
+
+#script___call__history .chat_message {
+    padding: 7px 5px;
+    width: 200px;
+    position: relative;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+    margin: 10px 0;
+    border-radius: 3px;
+}
+
+#script___call__history .chat_message.question {
+    background-color: #fff;
+    margin-right: 50px;
+}
+
+#script___call__history .chat_message.answer {
+    background-color: #E2FFC7;
+    margin-left: 35px;
+}
+
+#script___call__perform_form_start_call_button {
+    margin: 100px auto;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* --- Node common -------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------- */
+
+.jp-table {
+    background-color: #3E7E9C;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    position: absolute;
+    z-index: 11;
+    overflow: hidden;
+    min-width: 100px;
+    max-width: 100px;
+    width: 100px;
+    min-height: 30px;
+
+    /*width: auto;*/
+    border: 1px solid #ccc;
+}
+
+.jp-table .name, .view .name, .jp-table li.jsplumb-draggable, .view li.jsplumb-draggable {
+    color: #f7ebca;
+    cursor: move;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 0 6px 0 6px;
+    text-align: center;
+}
+
+.jp-table li.jsplumb-draggable, .view li.jsplumb-draggable {
+    min-width: 100px;
+    border-radius: 14px;
+}
+
+#script___designer__add_node_by_drop {
+    cursor: move;
+}
+
+.node-id {
+    padding: 0 4px;
+    font-size: 10px;
+    float: left;
+}
+
+#script___designer__canvas .node-content {
+    font-size: 11px;
+    line-height: 11px;
+    text-align: justify;
+    overflow: hidden;
+    /*white-space: nowrap;*/
+    text-overflow: ellipsis;
+    max-height: 101px;
+
+}
+
+.wrap {
+    padding: 0 !important;
+}
+
+#script___designer__canvas {
+    width: 100%;
+}
+
+.node-functions {
+    color: white;
+    cursor: move;
+    overflow: hidden;
+}
+
+.node-function {
+    padding: 2px;
+    cursor: pointer;
+    /*float: left;*/
+    display: inline-block;
+    font-size: 10px;
+    line-height: 10px;
+    -webkit-transition: background-color 0.15s ease-in;
+    -moz-transition: background-color 0.15s ease-in;
+    -o-transition: background-color 0.15s ease-in;
+    transition: background-color 0.15s ease-in;
+    float: right;
+
+}
+
+.node-function:hover {
+    color: #ff8000;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* --- Table nodes -------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------- */
+
+.jp-table {
+    margin-bottom: 0;
+    min-width: 200px;
+}
+
+.jp-table-columns {
+    margin: 0;
+    padding: 0;
+}
+
+.jp-table-column {
+    list-style-type: none;
+    padding: 4px 6px;
+    line-height: 13px;
+}
+
+.jp-table-column.drop-hover {
+    background-color: #cbe6de !important;
+    color: #555555 !important;
+}
+
+.jp-table-column-delete, .view-delete {
+    color: #407364;
+    padding: 2px;
+    cursor: pointer;
+    float: left;
+    font-size: 10px;
+    line-height: 10px;
+}
+
+.jp-table-column-edit {
+    color: #407364;
+    float: right;
+    cursor: pointer;
+}
+
+.new-column, .delete, .jp-table-column-delete {
+    -webkit-transition: background-color 0.15s ease-in;
+    -moz-transition: background-color 0.15s ease-in;
+    -o-transition: background-color 0.15s ease-in;
+    transition: background-color 0.15s ease-in;
+}
+
+.new-column:hover, .delete:hover {
+    color: #ff8000;
+}
+
+.jp-table-column-delete:hover {
+    color: #434343;
+}
+
+.jp-table-column-type-varchar {
+    background-color: #cbeae1;
+}
+
+.jp-table-column-type-integer {
+    background-color: #cbe6de;
+}
+
+.jp-table-column-type-date {
+    background-color: #e5f5f0;
+}
+
+.jp-table-column[primary-key='true'] {
+    background-color: #83b8a8;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* --- View nodes -------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------- */
+
+.view {
+    margin-bottom: 0;
+    width: 200px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.view-details {
+    font-size: 10px;
+    font-family: Courier;
+    padding: 10px;
+}
+
+.view .view-delete {
+    color: #f7ebca;
+    padding: 2px;
+    cursor: pointer;
+    float: left;
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.view .view-delete:hover {
+    color: #ff8000;
+}
+
+.txtViewQuery {
+    width: 272px;
+    height: 132px;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* --- Drag/drop interactions ------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+.drop-hover {
+    background-color: #629f72 !important;
+    color: #FFF !important;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* --- Edge styles ------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------- */
+
+.delete-relationship {
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.delete-relationship:hover {
+    color: #FFF;
+    background-color: #434343;
+    padding: 4px;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* --- dialogs ------------------------- */
+/* ----------------------------------------------------------------------------------------------------- */
+
+.form-labels-float {
+    float: left;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 6px;
+    padding-top: 6px;
+    font-size: 14px;
+}
+
+.form-labels {
+    font-weight: bold;
+    text-align: left;
+    padding-right: 6px;
+    font-size: 14px;
+}
+
+.checkbox-id {
+    margin-top: 6px;
+    margin-left: 22px;
+}
+
+.btn-icon-margin {
+    line-height: 18px;
+    margin-left: 10px;
+}
+
+.pull-left {
+    float: left;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.wysiwyg-font-size-smaller {
+    font-size: smaller;
+}
+
+.wysiwyg-font-size-larger {
+    font-size: larger;
+}
+
+.wysiwyg-font-size-xx-large {
+    font-size: xx-large;
+}
+
+.wysiwyg-font-size-x-large {
+    font-size: x-large;
+}
+
+.wysiwyg-font-size-large {
+    font-size: large;
+}
+
+.wysiwyg-font-size-medium {
+    font-size: medium;
+}
+
+.wysiwyg-font-size-small {
+    font-size: small;
+}
+
+.wysiwyg-font-size-x-small {
+    font-size: x-small;
+}
+
+.wysiwyg-font-size-xx-small {
+    font-size: xx-small;
+}
+
+.wysiwyg-color-black {
+    color: black;
+}
+
+.wysiwyg-color-silver {
+    color: silver;
+}
+
+.wysiwyg-color-gray {
+    color: gray;
+}
+
+.wysiwyg-color-white {
+    color: white;
+}
+
+.wysiwyg-color-maroon {
+    color: maroon;
+}
+
+.wysiwyg-color-red {
+    color: red;
+}
+
+.wysiwyg-color-purple {
+    color: purple;
+}
+
+.wysiwyg-color-fuchsia {
+    color: fuchsia;
+}
+
+.wysiwyg-color-green {
+    color: green;
+}
+
+.wysiwyg-color-lime {
+    color: lime;
+}
+
+.wysiwyg-color-olive {
+    color: olive;
+}
+
+.wysiwyg-color-yellow {
+    color: yellow;
+}
+
+.wysiwyg-color-navy {
+    color: navy;
+}
+
+.wysiwyg-color-blue {
+    color: blue;
+}
+
+.wysiwyg-color-teal {
+    color: teal;
+}
+
+.wysiwyg-color-aqua {
+    color: aqua;
+}
+
+.wysiwyg-text-align-right {
+    text-align: right;
+}
+
+.wysiwyg-text-align-center {
+    text-align: center;
+}
+
+.wysiwyg-text-align-left {
+    text-align: left;
+}
+
+.wysiwyg-float-left {
+    float: left;
+    margin: 0 8px 8px 0;
+}
+
+.wysiwyg-float-right {
+    float: right;
+    margin: 0 0 8px 8px;
+}
+
+.wysiwyg-clear-right {
+    clear: right;
+}
+
+.wysiwyg-clear-left {
+    clear: left;
+}

@@ -1,0 +1,20 @@
+<?php
+return [
+    'Online PBX integration' => "Интеграция с Online PBX",
+    'Users settings' => "Настройки пользователей",
+    'Saved!' => "Сохранено!",
+    'Account Online PBX' => "Данные Online PBX",
+    'Add account' => "Добавить аккаунт",
+    'Save' => "Сохранить",
+    'Online PBX user number' => "Номер пользователя в Online PBX",
+    'User' => "Пользователь",
+    'Domain' => "Домен",
+    'Phone' => "Телефон",
+    'Api key' => "Ключ API",
+    'Widget key' => "Ключ для виджета",
+    'Auth error! Check your credentials is right.' => "Ошибка авторизации! Проверьте правильно ли вы указали данные для авторизации.",
+    'Account added!' => "Аккаунт добавлен!",
+    'Aim reached' => "Цель достигнута",
+    'Aim not reached' => "Цель не достигнута",
+    'Call by script "{script_name}": duration - {duration}, result - {result}. More info: {url}' => 'Звонок по скрипту "{script_name}": длительность - {duration}, результат - {result}. Подробнее: {url}',
+];

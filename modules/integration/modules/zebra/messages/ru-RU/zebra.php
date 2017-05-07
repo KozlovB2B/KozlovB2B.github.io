@@ -1,0 +1,23 @@
+<?php
+return [
+    'Zebra integration' => "Интеграция с Zebra Telecom",
+    'Users settings' => "Настройки пользователей",
+    'Saved!' => "Сохранено!",
+    'Account Zebra' => "Данные Zebra",
+    'Add account' => "Добавить аккаунт",
+    'Save' => "Сохранить",
+    'Zebra user number' => "Номер пользователя в облачной АТС.<br/><small><i>Например: 123</i></small>",
+    'Zebra user name' => "Имя пользователя в облачной АТС.<br/><small><i>Например: Anna P</i></small>",
+    'User' => "Пользователь",
+    'Realm' => "Домен",
+    'Phone' => "Телефон",
+    'Login' => "Логин",
+    'Password' => "Пароль",
+    'Api key' => "Ключ API",
+    'Widget key' => "Ключ для виджета",
+    'Auth error! Check your credentials is right.' => "Ошибка авторизации! Проверьте правильно ли вы указали данные для авторизации.",
+    'Account added!' => "Аккаунт добавлен!",
+    'Aim reached' => "Цель достигнута",
+    'Aim not reached' => "Цель не достигнута",
+    'Call by script "{script_name}": duration - {duration}, result - {result}. More info: {url}' => 'Звонок по скрипту "{script_name}": длительность - {duration}, результат - {result}. Подробнее: {url}',
+];

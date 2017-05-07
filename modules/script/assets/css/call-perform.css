@@ -1,0 +1,119 @@
+.node-call-stage{
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 8px;
+    color: #DDDDDD;
+}
+.script___edge__add_button_container{
+    text-align: center;
+    background-color: #CBE6DE;
+    font-size: 10px;
+    padding: 3px 0 2px 0;
+    cursor: pointer;
+    color: rgb(64, 115, 100);
+}
+.script___edge__add_button_container:hover{
+    opacity: 0.9;
+}
+.inline-middle-field {
+    width: 220px;
+    margin-right: 20px;
+}
+.btn.script___call__edge_button  {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.btn.script___call__edge_button.visited  {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+tr.visited a.script___call__edge_button  {
+    color: #609;
+}
+a.script___call__edge_button.visited  {
+    color: #609;
+}
+a.script___call__edge_button  {
+    display: block;
+    margin-bottom: 12px;
+}
+.visited-indicator{
+    display: none;
+    font-style: italic;
+    color: #999999;
+}
+tr.visited .visited-indicator {
+    display: inline;
+}
+
+
+h3.script___call__perform_working_area-heading{
+    padding-bottom: 9px;
+    margin: 0;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 20px;
+}
+#script___call__first_node{
+    font-size: 16px;
+}
+#script___call__functions_buttons.btn{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#script___call__current_node {
+    margin: 10px 0;
+    font-size: 16px;
+    word-break: break-all;
+}
+
+#script___call__history {
+    font-size: 11px;
+    height: 420px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+#script___call__history .chat_message {
+    padding: 7px 5px;
+    width: 200px;
+    position: relative;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+    margin: 10px 0;
+    border-radius: 3px;
+}
+
+#script___call__history .chat_message.question {
+    background-color: #fff;
+    margin-right: 50px;
+}
+
+#script___call__history .chat_message.answer {
+    background-color: #E2FFC7;
+    margin-left: 35px;
+}
+
+#script___call__functions_buttons{
+    margin-top: 20px;
+}
+
+#script___call__current_edges{
+    width: 100%;
+}
+#script___call__current_edges td{
+    padding-left: 0;
+}
+#script___call__perform_form_end_call{
+    margin-left: 20px;
+}
+.script___call__perform_working_area_func_buttons_wrapper{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    height: 26px;
+}
+
+

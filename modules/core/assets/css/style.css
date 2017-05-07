@@ -1,0 +1,251 @@
+::-webkit-scrollbar{
+	width:10px;
+	margin-left: 20px;
+	background: #eeeeee;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #888888;
+}
+::-webkit-scrollbar-track{
+	border-width:0;}
+
+::-moz-scrollbar{
+	width:10px;
+	margin-left: 20px;
+	background: #eeeeee;
+}
+::-moz-scrollbar-thumb{
+	background-color: #888888;
+}
+::-moz-scrollbar-track{
+	border-width:0;
+}
+.legend-link{
+	text-decoration: none;
+	font-size: 85%;
+	margin-top: 4px;
+}
+.legend-link:hover{
+	text-decoration: none;
+}
+.singing{
+	color: #6e6e6e;
+	font-size: 54px;
+	text-align: center;
+	background-color: #fff;
+	background-image: none!important;
+	min-height: 0;
+	line-height: 54px;
+	padding: 200px 100px 0 100px;
+}
+.strong{
+	font-weight: bold;
+}
+.brand>img.brand-img{
+	height: 50px;
+	margin-bottom: -25px;
+}
+.grid-thumbnail{
+	max-height: 100px;
+	max-width: 100px;
+}
+.form_text {
+  margin-top: 5px;
+}
+.ellipsis{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.non-distinguish{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.grid_id_column{
+	width: 40px;
+}.grid_small_column{
+	width: 80px;
+}.grid_func_column{
+	width: 125px;
+}
+.grid_middle_column{
+	width: 150px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.grid_middle_long_column{
+	width: 250px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.grid_long_column{
+	width: 350px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.grid_longest_column{
+	width: 450px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.nowrap{
+	white-space: nowrap;
+}
+
+.billing___current_price{
+	font-size: 24px;
+	padding-top: 5px;
+}
+.or{
+	padding: 0 20px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html {height: 100%;}
+body {
+	height: auto !important;
+	height: 100%;
+	min-height: 100%;
+	position: relative;
+}
+.site___content{
+	padding-top: 80px;
+	padding-bottom: 100px;
+}
+.site___footer{
+	color: #888888;
+	padding: 14px 20px;
+	text-align: left;
+	position: absolute;
+	bottom: 0;
+	height: 60px;
+}
+.site___footer ul{
+	font-size: 12px;
+	display: inline;
+	color: #888888;
+}
+.site___footer ul li{
+	list-style: none;
+	display: inline;
+	color: #888888;
+}
+.site___footer ul li a{
+	margin: 20px;
+	color: #888888;
+}
+.strong{
+	font-weight: bold;
+}
+div.form .errorSummary
+{
+	border: 2px solid #C00;
+	padding: 7px 7px 12px 7px;
+	margin: 0 0 20px 0;
+	background: #FEE;
+	font-size: 0.9em;
+	border-radius: 6px;
+}
+
+.strikethrough{
+	text-decoration: line-through;
+}
+.no-margin{
+	margin: 0;
+}
+.white{
+	color: #ffffff;
+}
+.text-right{
+	text-align: right!important;
+}
+
+.modal-footer-text{
+	margin-top: 5px;
+}
+.modal-outside-heading{
+	position: fixed;
+	width: 1000px;
+	top:0;
+	padding: 15px 0;
+	left:50%;
+	margin-left: -500px;
+	color:#bd362f;
+	font-weight: 700;
+	text-align: center;
+	font-size: 32px;
+
+}
+
+div.hotnews {
+    max-height: 550px;
+    overflow-y: hidden;
+    font-size: 17px;
+}
+input.crm___order___return_cost_factor{
+    font-size: 100%;
+    height: 20px;
+    padding: 0 0 0 4px;
+    width: 40px;
+    margin-bottom: 0;
+}
+.btn-legend{
+    margin-top: 6px;
+}
+
+.blur {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='blur'><feGaussianBlur stdDeviation='2'/></filter></svg>#blur");
+    filter: blur(2px);
+    filter: progid:DXImageTransform.Microsoft.Blur(pixelRadius=2);
+}
+.noblur {
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    filter: none;
+}
+
+#blocker-screen{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1051;
+}
+
+#blocker-screen .blocker-screen-backdrop{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+    z-index: 1052;
+}
+#blocker-screen .blocker-screen-text{
+    position: fixed;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 42px;
+    z-index: 1053;
+}

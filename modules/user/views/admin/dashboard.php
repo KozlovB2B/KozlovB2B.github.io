@@ -1,0 +1,1 @@
+<h1 class="text-danger">Новый сервер</h1>

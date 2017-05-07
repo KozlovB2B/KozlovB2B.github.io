@@ -1,0 +1,166 @@
+.public-header {
+    border-bottom: 1px dashed #ff9c00;
+}
+
+.public-logo img {
+    margin: 10px 0;
+}
+
+.public-nav ul {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.public-nav ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.public-nav ul a {
+    color: #000;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.public-footer {
+    margin: 40px 0 0 0;
+    padding: 20px 0 0 0;
+    border-top: 1px dashed #ff9c00;
+}
+
+.public-footer ul li {
+    list-style: none;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.public-footer ul {
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 0;
+
+}
+
+.public-footer ul {
+    padding: 0 0 20px 0;
+}
+
+.public-footer a {
+    color: #000;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.public-footer .copyright {
+    font-size: 12px;
+    text-align: center;
+    color: #3f3f3f;
+}
+
+.public-page-heading {
+    text-align: center;
+}
+
+.public-page-heading h1 {
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 30px auto;
+    background-image: url(../img/angle-1.png), url(../img/angle-2.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+}
+
+.public-footer h4 span{ display:none;}
+
+@media screen and (max-width: 879px) {
+    .rate {
+        margin: 0 0.5% !important;
+        width: 23.5% !important;
+    }
+}
+
+@media screen and (max-width: 787px) {
+    .list-view .rate {
+        margin: 0 1.4% !important;
+        width: 46.5% !important;
+    }
+}
+
+
+
+@media screen and (max-width: 639px) {
+    .public-footer .col-xs-3 {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+
+    .public-footer .col-xs-3:first-child {
+        width: 100%;
+        text-align: center;
+        text-align: center;
+    }
+
+    .public-footer ul {
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    .public-footer h4 {
+        cursor: pointer;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+    }
+
+    .public-footer h4 span {
+        display: inline-block;
+        padding-left: 6px;
+        padding: 0px 6px 6px 6px;
+        font-size: 12px;
+        top: -10px;
+        font-weight: bold;
+        vertical-align: top;
+        transform: rotate(90deg);
+    }
+
+    .hide_mobile {
+        display: none;
+    }
+
+    .public-footer .copyright {
+        padding-top: 20px;
+    }
+
+    .public-header, .public-nav {
+        text-align: center;
+    }
+
+    .public-nav ul {
+        text-align: center;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .public-header {
+        padding-top: 6px;
+    }
+
+    .public-header .col-xs-2, .public-header .col-xs-10 {
+        width: 100%;
+    }
+
+    .public-nav ul li {
+        margin: 3px 6px;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .list-view .rate {
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+}
+

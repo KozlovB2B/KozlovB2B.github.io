@@ -1,0 +1,27 @@
+.nav.nav-pills.main-navigation a{
+    color: #333;
+    font-size: 18px;
+    padding: 18px 18px;
+}
+
+.nav.nav-pills.main-navigation .dropdown-menu{
+   border: none;
+    background: #eee;
+    /*background: #eee;*/
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav.nav-pills.main-navigation .dropdown-menu a:hover{
+    background: #E9E9E9;
+}
+
+.nav.nav-pills.main-navigation li {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.navbar-nav.main-navigation .open .dropdown-menu>li>a {
+    padding: 18px 18px 18px 25px;
+}

@@ -1,0 +1,349 @@
+.performer-workspace-overlay {
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    z-index: 1000000;
+    color: #333;
+    padding: 1%;
+}
+
+.performer-workspace {
+    background: #fff;
+    color: #333;
+    position: relative;
+    height: 100%;
+}
+
+.performer-call-screen {
+    background: #fff;
+}
+
+.performer-workspace-hint {
+    background: #fff;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    color: #a94442;
+    font-weight: bold;
+}
+
+.performer-workspace-state {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.performer-variants-position, .performer-node-content {
+    box-sizing: border-box;
+    padding: 4px 8px;
+    font-size: 14px;
+}
+
+.performer-node-content[data-font-size="medium"] {
+    font-size: 100%;
+}
+
+.performer-node-content[data-font-size="small"] {
+    font-size: 90%;
+}
+
+.performer-node-content[data-font-size="large"] {
+    font-size: 130%;
+}
+
+.variant-button {
+    display: inline-block;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+.performer-variants-position .variant-button.visited {
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+
+.performer-workspace-overlay[data-variants-style="links"][data-variants-position="left"] .node-variants-wrapper .btn.variant-button {
+    display: block;
+}
+
+.performer-workspace-overlay[data-variants-style="links"][data-variants-position="right"] .node-variants-wrapper .btn.variant-button {
+    display: block;
+}
+
+.performer-workspace-overlay[data-variants-style="links"][data-group-variants-position="left"] .group-variants-wrapper .btn.variant-button {
+    display: block;
+}
+
+.performer-workspace-overlay[data-variants-style="links"][data-group-variants-position="right"] .group-variants-wrapper .btn.variant-button {
+    display: block;
+}
+
+.performer-workspace-overlay[data-variants-style="links"] .node-variants-wrapper .btn.variant-button {
+    background: transparent;
+    border: none;
+    text-decoration: underline;
+    color: #0000aa;
+    display: block;
+}
+
+.performer-workspace-overlay[data-variants-style="links"] .node-variants-wrapper .btn.variant-button:active {
+    background: transparent;
+    box-shadow: none;
+}
+
+.performer-workspace-overlay[data-group-variants-style="links"] .group-variants-wrapper .btn.variant-button:active {
+    background: transparent;
+    box-shadow: none;
+}
+
+.performer-workspace-overlay[data-variants-style="links"] .node-variants-wrapper .btn.variant-button.visited {
+    color: #aa0089;
+}
+
+.performer-workspace-overlay[data-group-variants-style="links"] .group-variants-wrapper .btn.variant-button {
+    background: transparent;
+    border: none;
+    text-decoration: underline;
+    color: #0000aa;
+    display: block;
+}
+
+.performer-workspace-overlay[data-group-variants-style="links"] .group-variants-wrapper .btn.variant-button.visited {
+    color: #aa0089;
+}
+
+.performer-workspace .performer-variants-position .btn.variant-button.large {
+    padding: 10px 16px;
+    font-size: 18px;
+}
+
+.performer-workspace .performer-variants-position .btn.variant-button.small {
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+.performer-workspace .performer-variants-position .btn.variant-button.extra-small {
+    padding: 1px 5px;
+    font-size: 12px;
+}
+
+.performer-workspace-overlay[data-variants-style="links"] .node-variants-wrapper .btn.variant-button.large {
+    padding: 5px 8px;
+}
+
+.performer-workspace-overlay[data-variants-style="links"] .node-variants-wrapper .btn.variant-button.medium {
+    padding: 3px 6px;
+}
+
+.performer-workspace-overlay[data-variants-style="links"] .node-variants-wrapper .btn.variant-button.small {
+    padding: 2px 5px;
+}
+
+.performer-workspace-overlay[data-variants-style="links"] .node-variants-wrapper .btn.variant-button.extra-small {
+    padding: 1px 2px;
+}
+
+.performer-workspace-overlay[data-group-variants-style="links"] .group-variants-wrapper .btn.variant-button.large {
+    padding: 5px 8px;
+}
+
+.performer-workspace-overlay[data-group-variants-style="links"] .group-variants-wrapper .btn.variant-button.medium {
+    padding: 3px 6px;
+}
+
+.performer-workspace-overlay[data-group-variants-style="links"] .group-variants-wrapper .btn.variant-button.small {
+    padding: 2px 5px;
+}
+
+.performer-workspace-overlay[data-group-variants-style="links"] .group-variants-wrapper .btn.variant-button.extra-small {
+    padding: 1px 2px;
+}
+
+.performer-workspace .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.performer-workspace-head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.performer-workspace-head > div {
+    float: left;
+    display: inline-block;
+    margin: 0;
+    padding: 8px 0 0 8px;
+    height: 40px;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+/* 5 блоков в шапке */
+#performer___current_script_name {
+    max-width: 35%;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#performer___timer {
+    max-width: 12%;
+    text-align: left;
+
+}
+
+#performer___functions {
+    max-width: 45%;
+    text-align: right;
+    padding-top: 4px;
+    padding-left: 0;
+    float: right;
+}
+
+#performer___functions .btn {
+    margin-left: 10px;
+}
+
+#performer___close {
+    max-width: 8%;
+    text-align: right;
+    padding-right: 8px;
+    float: right;
+}
+
+#performer___close a {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+    color: #333;
+}
+
+/* 5 блоков в шапке */
+
+.performer-state-loading {
+    text-align: center;
+    font-size: 50px;
+    color: #333;
+    opacity: 0.7;
+    padding-top: 100px;
+}
+
+.performer-state-error {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    opacity: 0.8;
+    padding-top: 50px;
+}
+
+.performer-start-screen {
+    padding-top: 4vw;
+}
+
+#performer___start_node_text {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.performer-end-screen {
+    padding-top: 4vw;
+}
+
+.current-node-heading {
+    margin-bottom: 8px;
+}
+
+.current-node-heading strong {
+    font-size: 120%;
+}
+
+.current-node-heading .label {
+    padding: .3em .6em .3em;
+    font-size: 90%;
+    line-height: 1.5;
+}
+
+.performer-variants-position {
+    /*padding-top: 8px;*/
+}
+.performer-variants-left{
+    text-align: right;
+}
+.performer-variants-left .variant-button{
+    text-align: right;
+}
+.performer-variants-right{
+    text-align: left;
+}
+.performer-variants-right .variant-button{
+    text-align: left;
+}
+
+#performer___variants_bottom .btn.variant-button {
+    display: inline-block;
+}
+
+.performer-variants-left-right-and-node-content > div {
+    float: left;
+}
+
+.performer-variants-left-right-and-node-content {
+    overflow: hidden;
+}
+
+/* extra Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    #performer___close {
+        padding-top: 6px;
+    }
+
+    .performer-workspace-head {
+        height: 36px;
+    }
+
+    .performer-workspace-overlay {
+        padding: 0;
+    }
+
+
+    .performer-workspace .performer-call-screen .performer-variants-position .btn.variant-button,
+    .performer-workspace #performer___functions .btn {
+        padding: 1px 5px !important;
+        font-size: 13px !important;;
+        line-height: 1.5 !important;;
+    }
+
+    .performer-workspace .performer-call-screen .performer-node-content {
+        font-size: 95% !important;
+        line-height: 1.1 !important;
+    }
+
+    #performer___current_script_name {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    #performer___timer {
+        font-size: 14px;
+        font-weight: bold;
+    }
+}

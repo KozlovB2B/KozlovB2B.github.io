@@ -1,0 +1,93 @@
+.btn {
+    border-radius: 0;
+}
+
+.btn-primary {
+    background-color: #1c8bd3;
+    border-color: #1c8bd0;
+}
+
+.btn-primary:active:hover, .btn-primary.active:hover, .open > .dropdown-toggle.btn-primary:hover, .btn-primary:active:focus, .btn-primary.active:focus, .open > .dropdown-toggle.btn-primary:focus, .btn-primary:active.focus, .btn-primary.active.focus, .open > .dropdown-toggle.btn-primary.focus {
+    background-color: #0372BA;
+    border-color: #006CB4;
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #e9c554;
+    border-color: #DCB847;
+}
+
+.btn-warning:active:hover, .btn-warning.active:hover, .open > .dropdown-toggle.btn-warning:hover, .btn-warning:active:focus, .btn-warning.active:focus, .open > .dropdown-toggle.btn-warning:focus, .btn-warning:active.focus, .btn-warning.active.focus, .open > .dropdown-toggle.btn-warning.focus {
+    background-color: #DCB847;
+    border-color: #D0AC3B;
+}
+
+.input-group-lg > .form-control, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn {
+    border-radius: 0;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.input-daterange input.form-control:first-child{
+    border-radius: 0;
+}
+.input-daterange input.form-control:last-child{
+    border-radius: 0;
+}
+
+select.form-control {
+    border-radius: 0;
+}
+
+
+
+.input-group-addon {
+    border-radius: 0;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+}
+
+.pagination > li > a, .pagination > li > span {
+    color: #1a2127;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+}
+
+.pagination-lg > li:first-child > a, .pagination-lg > li:first-child > span {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.pagination > li:last-child > a, .pagination > li:last-child > span {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.pagination > li:last-child > a, .pagination > li:last-child > span {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.modal-content{
+    border-radius: 0;
+}
+.modal-header h4{
+    margin: 0;
+}
+.modal-header .close{
+    margin-top: 1px;
+}
+.label {
+    border-radius: 0
+}

@@ -1,0 +1,74 @@
+.no-margin{
+	margin: 0;
+}
+.navbar a.brand {
+  padding: 7px;
+  margin: 0;
+}
+.pointer{
+	cursor: pointer;
+}
+label>select, select.standalone{
+	margin-bottom: 0;
+}
+select.long{
+	min-width: 400px;
+}
+.brand>img {
+  height: 25px;
+}
+
+.grid-view-loading {
+  background: none !important;
+}
+
+i.fa {
+  display: inline-block;
+  margin-right: 10px;
+  width: 12px;
+  text-align: center;
+}
+ul{
+	margin: 0;
+	list-style: none;
+}
+
+.breadcrumb {
+	font-size: 11px !important;
+    margin-top: -21px;
+}
+
+.text-underlined{
+	text-decoration: underline;
+}
+.alert-gray{
+	background-color: #eeeeee;
+}
+
+.success-light{
+
+}
+.label-success-light,
+.badge-success-light {
+	background-color: #a0dd93;
+}
+.label-success-light[href],
+.badge-success-light[href] {
+	background-color: #356635;
+}
+.drp-container .form-control{
+    min-width: 185px;
+}
+.navbar-brand {
+    padding: 0px; /* firefox bug fix */
+}
+.navbar-brand>img {
+    height: 100%;
+    padding: 2px 15px 2px 20px; /* firefox bug fix */
+    width: auto;
+}
+.selectize-control.form-control{
+    min-height: 34px;
+    /*min-width: 250px;*/
+    /*width: 250px;*/
+}

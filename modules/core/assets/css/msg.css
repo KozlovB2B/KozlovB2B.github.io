@@ -1,0 +1,45 @@
+.ajax_indicator{
+	position: fixed;
+	z-index: 999999;
+	left: 50%;
+	top: -1px;
+	padding: 8px 14px 8px 14px;
+	border-radius: 0 0 4px 4px;
+}
+.message_wrapper {
+	z-index: 999999;
+	cursor: default;
+	padding: 0;
+	position: fixed;
+	top: 40px;
+	left: 50%;
+	width: 400px;
+	margin-left: -200px;
+}
+
+.message_wrapper .alert {
+	padding: 8px 14px 8px 14px;
+	margin-bottom: 0;
+}
+
+.message_wrapper .message_footer {
+	position: absolute;
+	bottom: -20px;
+	display: block;
+	opacity: 0;
+	font-size: 11px;
+	color: #808080;
+    width: 100%;
+}
+
+.message_wrapper .message_footer .hide_message {
+	cursor: pointer;
+	padding: 0;
+	text-align: right;
+	text-decoration: underline;
+    float: right;
+}
+
+.message_wrapper:hover .message_footer {
+	opacity: 1;
+}

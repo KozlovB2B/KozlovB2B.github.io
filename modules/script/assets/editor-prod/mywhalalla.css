@@ -1,0 +1,972 @@
+#content.container-fluid {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.culmann-surface {
+    /*overflow: hidden !important;*/
+    position: relative;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+    touch-action: none;
+    width: 100%;
+    height: 100%;
+}
+
+.culmann-surface-panning {
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.culmann-surface-paper {
+    z-index: 15;
+    position: absolute;
+    background-size: 25px 25px;
+    background-image: linear-gradient(to right, #bbb 0.5px, transparent 0.5px), linear-gradient(to bottom, #bbb 0.5px, transparent 0.5px);
+
+}
+
+.culmann-surface-paper[data-overview="high"] {
+    background-size: 50px 50px;
+    background-image: linear-gradient(to right, #bbb 1px, transparent 1px), linear-gradient(to bottom, #bbb 1px, transparent 1px);
+
+}
+
+.culmann-surface-paper[data-overview="birdseye"] {
+    background-size: 100px 100px;
+    background-image: linear-gradient(to right, #bbb 2px, transparent 2px), linear-gradient(to bottom, #bbb 2px, transparent 2px);
+
+}
+
+.node .node-big-number {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    font-size: 90px;
+    color: transparent;
+    text-align: center;
+    padding: 0;
+    line-height: 0.8;
+    display: none;
+}
+
+.culmann-surface-paper[data-show-numbers="show"] .node:not(:hover) .node-big-number {
+    color: #f7ebca;
+    text-shadow: 0 0 20px #4a4a4a;
+    display: block;
+}
+
+/*.culmann-surface-paper[data-show-numbers="show"] .node:hover .node-big-number {*/
+/*display: none;*/
+/*}*/
+
+.culmann-surface-paper[data-show-numbers="show"] .node:not(:hover) .node-content:not(.svg-wordwrap-test) {
+    color: transparent;
+}
+
+.smartzoom {
+    position: relative;
+}
+
+.culmann-surface-coordinator {
+    z-index: 16;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 1px;
+    overflow: visible !important;
+}
+
+.culmann-surface-pan {
+    position: absolute;
+    background-color: Azure;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    text-align: center;
+    cursor: pointer;
+    z-index: 30;
+    -webkit-transition: background-color 0.15s ease-in;
+    -moz-transition: background-color 0.15s ease-in;
+    -o-transition: background-color 0.15s ease-in;
+    transition: background-color 0.15s ease-in;
+}
+
+.culmann-surface-pan-top, .culmann-surface-pan-bottom {
+    width: 100%;
+    height: 20px;
+}
+
+.culmann-surface-pan-top:hover, .culmann-surface-pan-bottom:hover, .culmann-surface-pan-left:hover, .culmann-surface-pan-right:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    background-color: rgb(49, 119, 184);
+    color: white;
+    font-weight: bold;
+}
+
+.culmann-surface-pan-left, .culmann-surface-pan-right {
+    width: 20px;
+    height: 100%;
+    line-height: 40;
+}
+
+.culmann-surface-pan-active, .culmann-surface-pan-active:hover {
+    background-color: #f76258;
+}
+
+.culmann-surface-pan-top {
+    left: 0;
+    top: 0;
+}
+
+.culmann-surface-pan-bottom {
+    left: 0;
+    bottom: 0;
+}
+
+.culmann-surface-pan-left {
+    left: 0;
+    top: 0;
+}
+
+.culmann-surface-pan-right {
+    right: 0;
+    top: 0;
+}
+
+#func-panel {
+    width: 100%;
+}
+
+#func-panel .func-button.with-text {
+    border: 1px dashed #333;
+    padding: 5px 10px 0 10px;
+    cursor: move;
+    margin-top: 6px;
+    vertical-align: top;
+    margin-bottom: 0;
+    border-radius: 2px;
+}
+
+#func-panel .func-button.with-text.ui-draggable-dragging {
+    opacity: 0;
+    transition: none;
+}
+
+#func-panel .func-button.with-text i.glyphicon {
+    font-size: 26px;
+}
+
+.group {
+    background-color: #3E7E9C;
+
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 12px;
+    position: absolute;
+    z-index: 20;
+    /*overflow: hidden;*/
+    max-width: 100px;
+    width: 100px;
+    min-height: 30px;
+    padding: 0 4px 4px 4px;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    margin-bottom: 0;
+    min-width: 200px;
+    overflow: visible;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.group .group-head {
+    background-color: #cbe6de;
+    cursor: move;
+    padding: 4px;
+    margin-left: -4px;
+    margin-right: -4px;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+}
+
+.group .group-name {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
+    padding: 4px 2px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-height: 20px;
+}
+
+.group .group-functions i.group-function.group-edit-button {
+    float: right;
+}
+
+.group .group-functions i.group-function {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 4px;
+    cursor: pointer;
+    padding: 2px;
+    font-size: 12px;
+    line-height: 12px;
+    border-radius: 10px;
+}
+
+.group .group-functions i.group-function:hover {
+    color: #ff8000;
+    background-color: white;
+    transform: scale(2.5);
+}
+
+ul.group-variants-list {
+
+    padding: 0 4px;
+    margin: 0 -4px;
+}
+
+ul.group-variants-list li.group-variant {
+    list-style-type: none;
+    padding: 4px 6px;
+    line-height: 13px;
+    background-color: #cbe6de;
+    margin-left: -4px;
+    margin-right: -4px;
+    min-height: 24px;
+    overflow: visible;
+
+    vertical-align: bottom;
+    /*border-bottom: 1px white solid;*/
+    /*transition: 0.5s;*/
+}
+
+ul.group-variants-list li.group-variant:hover {
+    opacity: 0.9;
+}
+
+ul.group-variants-list li.group-variant .group-variant-function {
+    display: inline-block;
+    opacity: 0;
+    border-radius: 10px;
+    padding: 2px;
+    font-size: 10px;
+    line-height: 10px;
+}
+
+ul.group-variants-list li.group-variant:hover .group-variant-function {
+    opacity: 1;
+
+}
+
+ul.group-variants-list li.group-variant .group-variant-function:hover {
+    color: #ff8000;
+    background-color: white;
+    transform: scale(2.5);
+}
+
+ul.group-variants-list li.group-variant .group-variant-function.group-variant-edit-button {
+    float: right;
+}
+
+ul.group-variants-list li.group-variant .group-variant-function.group-variant-delete-button {
+    float: left;
+    margin-right: 4px;
+}
+
+ul.group-variants-list li.group-variant .group-variant-content {
+    float: left;
+    margin-top: 2px;
+    display: inline-block;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.group-variant-arrow {
+    position: absolute;
+}
+
+.group .group-variant-create-button {
+    padding: 4px 6px;
+    text-align: center;
+    background-color: #cbe6de;
+    cursor: pointer;
+    margin-left: -4px;
+    margin-right: -4px;
+    margin-bottom: -4px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.group .group-variant-create-button:hover {
+    opacity: 0.9;
+}
+
+.group .group-variant-create-button i {
+    margin-right: 4px;
+}
+
+.group-title {
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 1px;
+}
+
+.node-head.normal-ending {
+    background-color: #996600;
+}
+
+.node-head.is-goal {
+    background-color: #339900;
+}
+
+.node-head.start {
+    background-color: #f76258;
+}
+
+.node {
+    background-color: #3E7E9C;
+    /*border-radius: 2px;*/
+    cursor: pointer;
+    font-size: 12px;
+    position: absolute;
+    z-index: 20;
+    /*overflow: hidden;*/
+    max-width: 100px;
+    width: 100px;
+    min-height: 30px;
+    padding: 0 4px 4px 4px;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    margin-bottom: 0;
+    min-width: 200px;
+    overflow: visible;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+
+.node.jsplumb-drag-hover {
+    box-shadow: 0 0 30px rgba(51, 153, 0, 0.8);
+}
+
+.head {
+    background-color: #3E7E9C;
+}
+
+.node .node-head {
+    cursor: move;
+    padding: 4px;
+    margin-left: -4px;
+    margin-right: -4px;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+}
+
+.node .node-content {
+    color: #f7ebca;
+    font-size: 13px;
+    line-height: 14px;
+    padding: 2px 0;
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.node .node-call-stage {
+    color: white;
+    font-size: 11px;
+    line-height: 11px;
+    padding: 2px 0;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.node .node-groups {
+    color: white;
+    font-size: 11px;
+    line-height: 14px;
+    padding: 2px 0;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.node .node-functions {
+    color: white;
+    overflow: visible;
+    height: 20px;
+
+}
+
+.node .node-functions i.node-function {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: 0 4px;
+    cursor: pointer;
+    color: white;
+    padding: 2px;
+    font-size: 10px;
+    line-height: 10px;
+
+    float: right;
+    border-radius: 10px;
+}
+
+.node .node-functions i.node-function.node-edit-button {
+    margin-right: 0;
+}
+
+.node .node-functions i.node-function.node-delete-button {
+    float: left;
+    margin-left: 0;
+}
+
+.node .node-functions i.node-function:hover {
+    color: #ff8000;
+    background-color: white;
+    transform: scale(2.5);
+}
+
+ul.variants-list {
+    margin: 0;
+    padding: 0;
+}
+
+ul.variants-list li.variant {
+    list-style-type: none;
+    padding: 4px 6px;
+    line-height: 13px;
+    background-color: #cbe6de;
+    margin-left: -4px;
+    margin-right: -4px;
+    min-height: 24px;
+    overflow: visible;
+
+    vertical-align: bottom;
+    /*border-bottom: 1px white solid;*/
+    /*transition: 0.5s;*/
+}
+
+ul.variants-list li.variant:hover {
+    opacity: 0.9;
+}
+
+ul.variants-list li.variant .variant-function {
+    display: inline-block;
+    opacity: 0;
+    border-radius: 10px;
+    padding: 2px;
+    font-size: 10px;
+    line-height: 10px;
+}
+
+ul.variants-list li.variant:hover .variant-function {
+    opacity: 1;
+}
+
+ul.variants-list li.variant .variant-function:hover {
+    color: #ff8000;
+    background-color: white;
+    transform: scale(2.5);
+}
+
+ul.variants-list li.variant .variant-function.variant-edit-button {
+    float: right;
+}
+
+ul.variants-list li.variant .variant-function.variant-delete-button {
+    float: left;
+    margin-right: 4px;
+}
+
+ul.variants-list li.variant .variant-content {
+    float: left;
+    margin-top: 2px;
+    display: inline-block;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.node .variant-create-button {
+    padding: 4px 6px;
+    text-align: center;
+    background-color: #cbe6de;
+    cursor: pointer;
+    margin-left: -4px;
+    margin-right: -4px;
+    margin-bottom: -4px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.node .variant-create-button:hover {
+    opacity: 0.9;
+}
+
+.node .variant-create-button i {
+    margin-right: 4px;
+}
+
+.variant-clear-target {
+    cursor: pointer;
+    color: #333;
+    font-size: 12px;
+}
+
+.variant-clear-target i {
+    margin-top: 1px;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.variant-clear-target:hover {
+    z-index: 9999999;
+}
+
+.variant-clear-target:hover i {
+    color: #ff8000;
+    background-color: white;
+    transform: scale(2.5);
+
+}
+
+#dragging {
+    width: 10px;
+    height: 10px;
+    background: red;
+}
+
+#func-panel .script {
+    display: inline-block;
+    float: right;
+    margin-right: 5px;
+    margin-top: -5px;
+    text-align: right;
+    margin-bottom: -5px;
+}
+
+#func-panel .script .form-control {
+    width: 275px;
+    font-weight: bold;
+    border-color: transparent;
+    background: transparent;
+    box-shadow: none;
+    height: 28px;
+    padding: 2px 0;
+    padding-right: 23px;
+    margin-right: -20px;
+    text-align: right;
+    display: inline-block;
+}
+
+#func-panel .script .script-button {
+    opacity: 0.8;
+    cursor: pointer;
+    -webkit-transition: opacity 0.7s ease-in-out;
+    transition: opacity 0.7s ease-in-out;
+    display: inline-block;
+}
+
+#func-panel .script .script-button:hover {
+    opacity: 1;
+}
+
+#func-panel .script .script-call-button {
+
+    margin-top: 10px;
+    vertical-align: top;
+}
+
+#func-panel .script .form-control:focus {
+
+    border-bottom-color: #ccc;
+}
+
+#func-panel .script .selectize-control {
+    width: 250px;
+    font-size: 14px;
+    height: 28px;
+    display: inline-block;
+    margin-top: 4px;
+    margin-right: 4px;
+}
+
+#func-panel .script .selectize-control .selectize-input {
+    width: 250px;
+    height: 26px;
+    padding: 2px 6px;
+    min-height: 26px;
+    text-align: left;
+}
+
+#func-panel .script .selectize-control .selectize-dropdown {
+    text-align: left;
+}
+
+#func-panel .script .selectize-control.plugin-clear_button .clearAll {
+    font-size: 20px;
+    position: absolute;
+    right: 34px;
+    z-index: 10;
+    top: 0;
+    cursor: pointer;
+    opacity: .6;
+}
+
+#func-panel #editor___function__search_wrapper {
+    display: inline-block;
+    width: 250px;
+    font-size: 14px;
+    vertical-align: middle;
+    margin-top: -12px;
+}
+
+#editor___function__search_wrapper .selectize-control {
+    width: 250px;
+}
+
+.selectize-control .selectize-input {
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.selectize-control.plugin-clear_button .clearAll {
+    font-size: 24px;
+    position: absolute;
+    right: 34px;
+    z-index: 10;
+    top: 0;
+    cursor: pointer;
+    opacity: .6;
+}
+
+.selectize-control.plugin-clear_button .clearAll:hover {
+    text-decoration: none;
+    opacity: .8;
+}
+
+.script-test-call {
+    color: #333;
+}
+
+#zoom-panel, #zoom-panel * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#zoom-panel {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    -webkit-transition: -webkit-transform 0.7s;
+    transition: transform 0.7s;
+    padding: 2px 10px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+#zoom-panel .func-button {
+    margin: 10px;
+    padding: 0;
+    border: none;
+    font-size: 20px;
+    line-height: 20px;
+    background: transparent;
+    -webkit-transition: opacity 0.7s ease-in-out;
+    transition: opacity 0.7s ease-in-out;
+    cursor: pointer;
+    display: inline-block;
+    opacity: 0.8;
+}
+
+#zoom-panel .func-button.disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+#zoom-panel .zoom-button:hover {
+    opacity: 1;
+}
+
+#zoom-panel .zoom-button.disabled:hover {
+    opacity: 0.3;
+}
+
+.save-indicator {
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    height: 16px;
+}
+
+.script-form {
+    margin-right: 20px;
+}
+
+.script-functions {
+    width: 140px;
+    text-align: right;
+}
+
+.script-func-button {
+    margin: 10px 5px 6px 5px;
+    padding: 0;
+    border: none;
+    font-size: 20px;
+    line-height: 20px;
+    background: transparent;
+    -webkit-transition: opacity 0.7s ease-in-out;
+    transition: opacity 0.7s ease-in-out;
+    cursor: pointer;
+    display: inline-block;
+    opacity: 0.8;
+}
+
+.overlay-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 2;
+    padding: 100px;
+    margin: 0;
+    z-index: 1000;
+}
+
+.new-object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 200px;
+    width: 200px;
+    min-height: 130px;
+    height: 130px;
+    border-right: 1px dashed #8C8C8C;
+    border-bottom: 1px dashed #8C8C8C;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 50px;
+    color: #8C8C8C;
+    background-color: rgba(255, 255, 255, 0.7);
+    line-height: 1;
+}
+
+.ruler-x {
+    min-height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    border-top: 1px dashed #8C8C8C;
+    box-sizing: border-box;
+    padding: 1px;
+}
+
+.ruler-y {
+    width: 1px;
+    min-width: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    border-left: 1px dashed #8C8C8C;
+    box-sizing: border-box;
+    padding: 1px;
+}
+
+.culmann-surface-paper[data-overview="high"] .new-object,
+.culmann-surface-paper[data-overview="high"] .ruler-x,
+.culmann-surface-paper[data-overview="high"] .ruler-y {
+    border-width: 2px;
+}
+
+.culmann-surface-paper[data-overview="birdseye"] .new-object,
+.culmann-surface-paper[data-overview="birdseye"] .ruler-x,
+.culmann-surface-paper[data-overview="birdseye"] .ruler-y {
+    border-width: 4px;
+}
+
+.culmann-surface-paper[data-overview="birdseye"] .new-object {
+    /*background-color: #8C8C8C;*/
+    /*color: white;*/
+    font-size: 48px;
+    padding-top: 15px;
+}
+
+.variants-sortable-list {
+    overflow-y: auto;
+    max-height: 650px;
+    padding-bottom: 10px;
+}
+
+.variants-sortable-list li {
+    overflow: hidden;
+}
+
+.variants-sortable-list li > div {
+    float: left;
+}
+
+.variants-sortable-list li .glyphicon {
+    margin-top: 2px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.variants-sortable-list li:hover .glyphicon {
+    opacity: 0.9;
+}
+
+.variants-sortable-list-item-left-col {
+    width: 10%;
+    text-align: left;
+}
+
+.variants-sortable-list-item-right-col {
+    width: 10%;
+    text-align: right;
+}
+
+.variants-sortable-list-item-middle-col {
+    width: 80%;
+    text-align: left;
+    cursor: move;
+}
+
+.variants-sortable-list-variant-content {
+    font-size: 13px;
+}
+
+.variants-sortable-list-variant-target {
+    font-size: 11px;
+    font-style: italic;
+    color: #2b2b2b;
+}
+
+.variants-sortable-list-variant-target {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.editor___image_export {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+}
+
+#script___script__performer_options_form .radio {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#script___script__performer_options_form legend {
+    font-size: 16px;
+}
+
+.btn.create-variant-embed-button {
+    margin-bottom: 10px;
+}
+
+.group_variants-sortable-list {
+    overflow-y: auto;
+    max-height: 650px;
+    padding-bottom: 10px;
+}
+
+.group_variants-sortable-list li {
+    overflow: hidden;
+}
+
+.group_variants-sortable-list li > div {
+    float: left;
+}
+
+.group_variants-sortable-list li .glyphicon {
+    margin-top: 2px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.group_variants-sortable-list li:hover .glyphicon {
+    opacity: 0.9;
+}
+
+.group_variants-sortable-list-item-left-col {
+    width: 10%;
+    text-align: left;
+}
+
+.group_variants-sortable-list-item-right-col {
+    width: 10%;
+    text-align: right;
+}
+
+.group_variants-sortable-list-item-middle-col {
+    width: 80%;
+    text-align: left;
+    cursor: move;
+}
+
+.group_variants-sortable-list-variant-content {
+    font-size: 13px;
+}
+
+.group_variants-sortable-list-variant-target {
+    font-size: 11px;
+    font-style: italic;
+    color: #2b2b2b;
+}
+
+.group_variants-sortable-list-variant-target {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    max-width: 100%;
+}
+.btn.create-group_variant-embed-button {
+    margin-bottom: 10px;
+}
