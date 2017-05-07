@@ -1,0 +1,74 @@
+{
+  "name": "romi45/ssv2",
+  "description": "Script Designer",
+  "type": "project",
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": "^2.0.8",
+    "yiisoft/yii2-bootstrap": "*",
+    "yiisoft/yii2-swiftmailer": "*",
+    "omgdef/yii2-unisender": "*",
+    "rmrevin/yii2-fontawesome": "2.12.*",
+    "kartik-v/yii2-mpdf": "dev-master",
+    "juffin_halli/yii2-data-provider-iterator": "@dev",
+    "romi45/yii2-find-model-trait": "*",
+    "kartik-v/yii2-date-range": "*",
+    "paypal/rest-api-sdk-php": "*",
+    "2amigos/yii2-taggable-behavior": "~1.0",
+    "yiidoc/yii2-redactor": "*",
+    "2amigos/yii2-selectize-widget": "~1.0",
+    "bower-asset/jquery-mousewheel": "3.1.13",
+    "bower-asset/selectize": "~0.12.0",
+    "bower-asset/dropzone": "4.3.0",
+    "romi45/yii2-seo-behavior": "~1.0",
+    "bigpaulie/yii2-social-share": "dev-master",
+    "kartik-v/yii2-widget-sidenav": "*",
+    "yii2tech/ar-softdelete": "^1.0",
+    "nabarabane/amocrm": "1.1.2",
+    "kartik-v/yii2-widget-typeahead": "*",
+    "romi45/yii2-rbac-collector": "~1.0",
+    "bower-asset/bootstrap-datepicker": "~1.0",
+    "bower-asset/jquery.panzoom": "3.2.2",
+    "bower-asset/centrifuge": "1.3.7",
+    "sl4mmer/phpcent":"dev-master",
+    "yiisoft/yii2-jui": "^2.0"
+  },
+  "require-dev": {
+    "matthiasmullie/minify": "1.3.39",
+    "yiisoft/yii2-debug": "*",
+    "yiisoft/yii2-gii": "*"
+  },
+  "config": {
+    "process-timeout": 1800
+  },
+
+  "scripts": {
+    "post-install-cmd": [
+      "mkdir -m 0777 -p -v runtime",
+      "mkdir -m 0777 -p -v config/generated",
+      "mkdir -m 0777 -p -v public_html/assets",
+      "yii\\composer\\Installer::postCreateProject",
+      "sudo rm -rf public_html/assets/*"
+    ],
+    "post-update-cmd": [
+      "sudo rm -rf public_html/assets/*"
+    ]
+  },
+
+  "extra": {
+    "yii\\composer\\Installer::postCreateProject": {
+      "setPermission": [
+        {
+          "runtime": "0777",
+          "public_html/assets": "0777",
+          "yii": "0755"
+        }
+      ]
+    },
+    "asset-installer-paths": {
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower"
+    }
+  }
+}
