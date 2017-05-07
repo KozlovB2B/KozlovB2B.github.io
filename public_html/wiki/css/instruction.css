@@ -1,0 +1,148 @@
+.ss-instruction-sidebar.affix {
+    position: static;
+}
+@media (min-width: 768px) {
+    .ss-instruction-sidebar {
+        padding-left: 20px;
+    }
+}
+
+/* First level of nav */
+.ss-instruction-sidenav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* All levels of nav */
+.ss-instruction-sidebar .nav > li > a {
+    display: block;
+    padding: 4px 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #767676;
+}
+.ss-instruction-sidebar .nav > li > a:hover,
+.ss-instruction-sidebar .nav > li > a:focus {
+    padding-left: 19px;
+    color: #563d7c;
+    text-decoration: none;
+    background-color: transparent;
+    border-left: 1px solid #563d7c;
+}
+.ss-instruction-sidebar .nav > .active > a,
+.ss-instruction-sidebar .nav > .active:hover > a,
+.ss-instruction-sidebar .nav > .active:focus > a {
+    padding-left: 18px;
+    font-weight: bold;
+    color: #563d7c;
+    background-color: transparent;
+    border-left: 2px solid #563d7c;
+}
+
+/* Nav: second level (shown on .active) */
+.ss-instruction-sidebar .nav .nav {
+    display: none; /* Hide by default, but at >768px, show it */
+    padding-bottom: 10px;
+}
+.ss-instruction-sidebar .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.ss-instruction-sidebar .nav .nav > li > a:hover,
+.ss-instruction-sidebar .nav .nav > li > a:focus {
+    padding-left: 29px;
+}
+.ss-instruction-sidebar .nav .nav > .active > a,
+.ss-instruction-sidebar .nav .nav > .active:hover > a,
+.ss-instruction-sidebar .nav .nav > .active:focus > a {
+    padding-left: 28px;
+    font-weight: 500;
+}
+
+/* Back to top (hidden on mobile) */
+.back-to-top,
+.ss-instruction-theme-toggle {
+    display: none;
+    padding: 4px 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #999;
+}
+.back-to-top:hover,
+.ss-instruction-theme-toggle:hover {
+    color: #563d7c;
+    text-decoration: none;
+}
+.ss-instruction-theme-toggle {
+    margin-top: 0;
+}
+
+@media (min-width: 768px) {
+    .back-to-top,
+    .ss-instruction-theme-toggle {
+        display: block;
+    }
+}
+
+/* Show and affix the side nav when space allows it */
+@media (min-width: 992px) {
+    .ss-instruction-sidebar .nav > .active > ul {
+        display: block;
+    }
+    /* Widen the fixed sidebar */
+    .ss-instruction-sidebar.affix,
+    .ss-instruction-sidebar.affix-bottom {
+        width: 213px;
+    }
+    .ss-instruction-sidebar.affix {
+        position: fixed; /* Undo the static from mobile first approach */
+        top: 20px;
+    }
+    .ss-instruction-sidebar.affix-bottom {
+        position: absolute; /* Undo the static from mobile first approach */
+    }
+    .ss-instruction-sidebar.affix-bottom .ss-instruction-sidenav,
+    .ss-instruction-sidebar.affix .ss-instruction-sidenav {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 1200px) {
+    /* Widen the fixed sidebar again */
+    .ss-instruction-sidebar.affix-bottom,
+    .ss-instruction-sidebar.affix {
+        width: 263px;
+    }
+}
+
+/*
+ * Docs sections
+ *
+ * Content blocks for each component or feature.
+ */
+
+/* Space things out */
+.ss-instruction-section {
+    margin-bottom: 60px;
+}
+.ss-instruction-section:last-child {
+    margin-bottom: 0;
+}
+
+h1[id] {
+    padding-top: 20px;
+    margin-top: 0;
+}
+
+.ss-instruction-instruction img{
+    margin: 15px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.ss-instruction-instruction ol li{
+    margin-bottom: 30px;
+}
