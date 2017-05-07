@@ -1,0 +1,14 @@
+{
+  "secret": "d413f198-fc9f-4ba7-ac0e-f55a2e70669a",
+  "namespaces": [
+    {
+      "name": "script-editor",
+      "publish": true,
+      "watch": true,
+      "presence": true,
+      "join_leave": true
+    }
+  ],
+  "port": 8001,
+  "debug": false
+}
