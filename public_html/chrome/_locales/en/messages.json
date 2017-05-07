@@ -1,0 +1,11 @@
+{
+  "extension_name": {
+    "message": "ScriptDesigner widget"
+  },
+  "extension_short_name": {
+    "message": "ScriptDesigner widget"
+  },
+  "extension_description": {
+    "message": "Use ScriptDesigner in your CRM window."
+  }
+}

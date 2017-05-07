@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "__MSG_extension_name__",
+  "short_name": "__MSG_extension_short_name__",
+  "version": "1.4",
+  "default_locale": "ru",
+  "description":"__MSG_extension_description__",
+  "icons":{
+    "128":"img/icons/128.png",
+    "16":"img/icons/16.png",
+    "48":"img/icons/48.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*",
+    "cookies",
+    "\u003Call_urls\u003E", "unlimitedStorage"
+  ],
+  "browser_action": {
+    "default_title": "ScriptDesigner widget",
+    "default_icon": "img/icons/128.png"
+  }
+}

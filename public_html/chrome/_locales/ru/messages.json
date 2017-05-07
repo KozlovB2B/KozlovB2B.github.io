@@ -1,0 +1,11 @@
+{
+    "extension_name": {
+        "message": "ScriptDesigner widget"
+    },
+    "extension_short_name": {
+        "message": "ScriptDesigner widget"
+    },
+    "extension_description": {
+        "message": "Виджет для работы со ScriptDesigner в окне вашей CRM. ScriptDesigner - создавай и используй скрипты телефонных продаж."
+    }
+}
